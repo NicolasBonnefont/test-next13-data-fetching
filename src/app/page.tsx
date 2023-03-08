@@ -1,7 +1,7 @@
 import axios from "axios"
 import Image from "next/image"
 
-export const revalidate = 10 // 60 seconds
+export const revalidate = 60 // 60 seconds
 
 async function getUserGithub() {
   const response = await axios.get('https://api.github.com/users/nicolasbonnefont')
